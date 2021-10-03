@@ -8,15 +8,14 @@
         <version>2.5.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.kanghouchao.kubenetes</groupId>
-    <artifactId>spring-cloud-kubernets-study</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>Kang::study::kubenetes</name>
+    <groupId>com.kanghouchao.kubernetes</groupId>
+    <artifactId>spring-cloud-kubernetes-study</artifactId>
+    <version>0.0.2-SNAPSHOT</version>
+    <name>kang::study::kubernetes</name>
     <description>configmap-study</description>
     <properties>
         <java.version>1.8</java.version>
         <fabric8.maven.plugin.version>4.4.0</fabric8.maven.plugin.version>
-        <docker.buildArg.jarName>${project.artifactId}.${project.packaging}</docker.buildArg.jarName>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -92,10 +91,14 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <verbose>true</verbose>
                     <images>
                         <image>
                             <name>kang/${project.artifactId}:${project.version}</name>
                             <build>
+                                <args>
+                                    <ASSEMBLY_JAR_FILENAME>${project.artifactId}.${project.packaging}</ASSEMBLY_JAR_FILENAME>
+                                </args>
                                 <tags>
                                     <tag>latest</tag>
                                     <tag>${project.version}</tag>
