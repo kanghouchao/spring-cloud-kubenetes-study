@@ -5,7 +5,7 @@ metadata:
   labels:
     run: spring
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       run: spring
@@ -15,8 +15,8 @@ spec:
         run: spring
     spec:
       containers:
-        - image: kanghouchao/sutdy/spring-cloud-kubenetes:latest
-          name: spring
+        - image: {image.user}/${project.artifactId}:${project.version}
+          name: ${project.artifactId}
           ports:
             - containerPort: 8080
       imagePullPolicy: Never

@@ -94,7 +94,7 @@
                     <verbose>true</verbose>
                     <images>
                         <image>
-                            <name>kang/${project.artifactId}:${project.version}</name>
+                            <name>{image.user}/${project.artifactId}:${project.version}</name>
                             <build>
                                 <args>
                                     <ASSEMBLY_JAR_FILENAME>${project.artifactId}.${project.packaging}</ASSEMBLY_JAR_FILENAME>
