@@ -2,9 +2,9 @@
           xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.1.0 http://maven.apache.org/xsd/assembly-2.1.0.xsd">
     <files>
         <file>
-            <source>/target/${project.build.finalName}.${artifact.extension}</source>
-            <outputDirectory>/target</outputDirectory>
-            <destName>app</destName>
+            <source>target/${project.build.finalName}.${project.packaging}</source>
+            <outputDirectory>.</outputDirectory>
+            <destName>${project.artifactId}.${project.packaging}</destName>
         </file>
     </files>
 </assembly>
