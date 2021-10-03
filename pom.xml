@@ -95,7 +95,7 @@
                         <image>
                             <name>kang/${project.artifactId}:${project.version}</name>
                             <build>
-                                <dockerFile>classpath:docker/Dockerfile</dockerFile>
+                                <dockerFile>Dockerfile</dockerFile>
                             </build>
                         </image>
                     </images>
