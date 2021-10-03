@@ -95,8 +95,7 @@
                         <image>
                             <name>kang/${project.artifactId}:${project.version}</name>
                             <build>
-                                <contextDir>/home/vin/k8s/spring-cloud-kubenetes-study/target</contextDir>
-                                <dockerFile>docker/Dockerfile</dockerFile>
+                                <contextDir>/home/vin/k8s/spring-cloud-kubenetes-study</contextDir>
                             </build>
                         </image>
                     </images>
