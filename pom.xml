@@ -95,11 +95,10 @@
                         <image>
                             <name>kang/${project.artifactId}:${project.version}</name>
                             <build>
-                                <from>store/oracle/serverjre:1.8.0_241-b07</from>
-                                <maintainer>hchkang8710@gmail.com</maintainer>
-                                <ports>
-                                    <port>8080</port>
-                                </ports>
+                                <assembly>
+                                    <descriptor>assembly.xml</descriptor>
+                                </assembly>
+                                <dockerFile>Dockerfile</dockerFile>
                             </build>
                         </image>
                     </images>
