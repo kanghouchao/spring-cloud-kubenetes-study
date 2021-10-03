@@ -90,9 +90,6 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <dockerHost>tcp://0.0.0.0:2375</dockerHost>
-                </configuration>
             </plugin>
         </plugins>
     </build>
