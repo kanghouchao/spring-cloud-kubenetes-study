@@ -16,6 +16,7 @@
     <properties>
         <java.version>1.8</java.version>
         <fabric8.maven.plugin.version>4.4.0</fabric8.maven.plugin.version>
+        <docker.buildArg.jarName>${project.artifactId}.${project.packaging}</docker.buildArg.jarName>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -95,9 +96,6 @@
                         <image>
                             <name>kang/${project.artifactId}:${project.version}</name>
                             <build>
-                                <args>
-                                    <JAR_FILE_NAME>${project.artifactId}.${project.packaging}</JAR_FILE_NAME>
-                                </args>
                                 <tags>
                                     <tag>latest</tag>
                                     <tag>${project.version}</tag>

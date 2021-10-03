@@ -4,7 +4,7 @@
         <file>
             <source>target/${project.build.finalName}.${project.packaging}</source>
             <outputDirectory>.</outputDirectory>
-            <destName>${project.artifactId}.${project.packaging}</destName>
+            <destName>${jarName}</destName>
         </file>
     </files>
 </assembly>
