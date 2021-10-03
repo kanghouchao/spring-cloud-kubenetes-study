@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ${project.artifactId}
@@ -15,7 +15,7 @@ spec:
         run: spring
     spec:
       containers:
-        - image: {image.user}/${project.artifactId}:${project.version}
+        - image: kanghouchao/${project.artifactId}:${project.version}
           name: ${project.artifactId}
           ports:
             - containerPort: 8080

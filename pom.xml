@@ -84,9 +84,11 @@
                 <version>${fabric8.maven.plugin.version}</version>
                 <executions>
                     <execution>
-                        <id>fmp</id>
+                        <id>fabric8</id>
                         <goals>
+                            <goal>resource</goal>
                             <goal>build</goal>
+                            <goal>helm</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -94,7 +96,7 @@
                     <verbose>true</verbose>
                     <images>
                         <image>
-                            <name>{image.user}/${project.artifactId}:${project.version}</name>
+                            <name>kanghouchao/${project.artifactId}:${project.version}</name>
                             <build>
                                 <args>
                                     <ASSEMBLY_JAR_FILENAME>${project.artifactId}.${project.packaging}</ASSEMBLY_JAR_FILENAME>
