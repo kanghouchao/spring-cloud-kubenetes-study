@@ -95,6 +95,13 @@
                         <image>
                             <name>kang/${project.artifactId}:${project.version}</name>
                             <build>
+                                <args>
+                                    <JAR_FILE_NAME>${project.artifactId}.${project.packaging}</JAR_FILE_NAME>
+                                </args>
+                                <tags>
+                                    <tag>latest</tag>
+                                    <tag>${project.version}</tag>
+                                </tags>
                                 <assembly>
                                     <descriptor>assembly.xml</descriptor>
                                 </assembly>
