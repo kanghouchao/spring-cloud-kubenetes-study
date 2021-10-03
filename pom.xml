@@ -90,6 +90,16 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <images>
+                        <image>
+                            <name>kang/${project.artifactId}:${project.version}</name>
+                            <build>
+                                <dockerFile>classpath:docker/Dockerfile</dockerFile>
+                            </build>
+                        </image>
+                    </images>
+                </configuration>
             </plugin>
         </plugins>
     </build>
