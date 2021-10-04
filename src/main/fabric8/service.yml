@@ -1,6 +1,6 @@
 metadata:
   labels:
-    expose: "true"
+    project: ${project.artifactId}
 spec:
   ports:
   - port: 8080

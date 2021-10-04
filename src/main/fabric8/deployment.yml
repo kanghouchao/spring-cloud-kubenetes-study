@@ -6,11 +6,13 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      run: spring
+      project: ${project.artifactId}
+      version: ${project.version}
   template:
     metadata:
       labels:
-        run: spring
+        project: ${project.artifactId}
+        version: ${project.version}
     spec:
       containers:
         - image: kanghouchao/${project.artifactId}:${project.version}
