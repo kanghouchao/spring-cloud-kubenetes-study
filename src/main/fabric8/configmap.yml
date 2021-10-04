@@ -1,5 +1,4 @@
 metadata:
   name: ${project.artifactId}
 data:
-  application.properties: |-
-    key: value
+  key: value
