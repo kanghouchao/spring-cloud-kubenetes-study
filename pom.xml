@@ -99,9 +99,6 @@
                         <image>
                             <name>kanghouchao/${project.artifactId}:${project.version}</name>
                             <build>
-                                <args>
-                                    <ASSEMBLY_JAR_FILENAME>${project.artifactId}.${project.packaging}</ASSEMBLY_JAR_FILENAME>
-                                </args>
                                 <tags>
                                     <tag>latest</tag>
                                     <tag>${project.version}</tag>
