@@ -1,11 +1,11 @@
 - name: default
-    enricher:
-      includes:
-        - fmp-name
-        - fmp-portname
-      excludes:
-        - fmp-ingress
-        - build
-    generator:
-      includes:
-        - spring-boot
+  enricher:
+    includes:
+      - fmp-name
+      - fmp-portname
+    excludes:
+      - fmp-ingress
+      - build
+  generator:
+    includes:
+      - spring-boot
