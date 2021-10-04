@@ -10,5 +10,5 @@ eval $(minikube docker-env)
 ```
 ### use maven plugin
 ```shell
-mvn clean package fabric8:build -Dmaven.test.skip=true
+mvn clean package fabric8:build fabric8:deploy -Dmaven.test.skip=true
 ```
