@@ -1,8 +1,7 @@
 metadata:
-  labels:
-    project: ${project.artifactId}
+  name: ${project.artifactId}
 spec:
   ports:
-  - port: 8080
-    targetPort: 8080
+    - port: 8080
+      targetPort: 8080
   type: LoadBalancer

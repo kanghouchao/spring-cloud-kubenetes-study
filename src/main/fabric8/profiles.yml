@@ -3,6 +3,7 @@
     includes:
       - fmp-service
       - fmp-image
+      - fmp-configmap-file
     excludes:
       - fmp-ingress
   generator:
