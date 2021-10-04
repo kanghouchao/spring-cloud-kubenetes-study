@@ -14,5 +14,9 @@ spec:
           ports:
             - containerPort: 8080
           imagePullPolicy: IfNotPresent
-          envFrom:
-            - configMapRef: ${project.artifactId}
+          env:
+            - name: key
+              valueFrom:
+                configMapKeyRef:
+                  name: ${project.artifactId}
+                  value: key
