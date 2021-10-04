@@ -1,11 +1,10 @@
-- name: default
+- name: develop
   enricher:
     includes:
-      - fmp-name
-      - fmp-portname
+      - fmp-service
+      - fmp-image
     excludes:
       - fmp-ingress
-      - build
   generator:
     includes:
       - spring-boot

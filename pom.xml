@@ -94,6 +94,7 @@
                 </executions>
                 <configuration>
                     <verbose>true</verbose>
+                    <profile>develop</profile>
                     <images>
                         <image>
                             <name>kanghouchao/${project.artifactId}:${project.version}</name>
