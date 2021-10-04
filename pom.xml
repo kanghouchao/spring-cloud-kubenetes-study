@@ -15,7 +15,7 @@
     <description>configmap-study</description>
     <properties>
         <java.version>1.8</java.version>
-        <fabric8.maven.plugin.version>4.4.0</fabric8.maven.plugin.version>
+        <fabric8.maven.plugin.version>4.4.1</fabric8.maven.plugin.version>
     </properties>
     <dependencyManagement>
         <dependencies>
