@@ -1,5 +1,7 @@
 metadata:
   name: ${project.artifactId}-service
+  existingJavaType: jre8
+  javaOmitEmpty: ~
 spec:
   ports:
     - port: 8080
