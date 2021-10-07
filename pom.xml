@@ -104,13 +104,13 @@
                                     <layers>
                                         <layer>
                                             <id>jar</id>
-                                            <fileSets>
-                                                <fileSet>
+                                            <files>
+                                                <file>
                                                     <source>target/${project.build.finalName}.${project.packaging}</source>
                                                     <outputDirectory>.</outputDirectory>
                                                     <destName>assembly-tmp.jar</destName>
-                                                </fileSet>
-                                            </fileSets>
+                                                </file>
+                                            </files>
                                         </layer>
                                     </layers>
                                 </assembly>
