@@ -101,7 +101,17 @@
                                     <tag>latest</tag>
                                 </tags>
                                 <assembly>
-                                    <descriptor>assembly.xml</descriptor>
+                                    <layers>
+                                        <layer>
+                                            <id>jar</id>
+                                            <fileSets>
+                                                <fileSet>
+                                                    <directory>target/${project.build.finalName}.${project.packaging}</directory>
+                                                    <outputDirectory>main/docker/maven/assembly-tmp.jar</outputDirectory>
+                                                </fileSet>
+                                            </fileSets>
+                                        </layer>
+                                    </layers>
                                 </assembly>
                                 <dockerFile>Dockerfile</dockerFile>
                             </build>
