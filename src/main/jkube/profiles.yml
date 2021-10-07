@@ -1,11 +1,11 @@
 - name: develop
   enricher:
     includes:
-      - fmp-service
-      - fmp-image
-      - fmp-configmap-file
+      - jkube-service
+      - jkube-image
+      - jkube-configmap-file
     excludes:
-      - fmp-ingress
+      - jkube-ingress
   generator:
     includes:
       - spring-boot
