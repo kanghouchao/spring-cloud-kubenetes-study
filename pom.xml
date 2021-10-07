@@ -106,8 +106,9 @@
                                             <id>jar</id>
                                             <fileSets>
                                                 <fileSet>
-                                                    <directory>target/${project.build.finalName}.${project.packaging}</directory>
-                                                    <outputDirectory>main/docker/maven/assembly-tmp.jar</outputDirectory>
+                                                    <source>target/${project.build.finalName}.${project.packaging}</source>
+                                                    <outputDirectory>.</outputDirectory>
+                                                    <destName>assembly-tmp.jar</destName>
                                                 </fileSet>
                                             </fileSets>
                                         </layer>
