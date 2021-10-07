@@ -1,6 +1,5 @@
 metadata:
-  project: demo
-  name: ${project.artifactId}
+  name: ${project.artifactId}-service
 spec:
   ports:
     - port: 8080
