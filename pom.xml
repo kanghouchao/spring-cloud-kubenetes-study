@@ -100,20 +100,6 @@
                                 <tags>
                                     <tag>latest</tag>
                                 </tags>
-                                <assembly>
-                                    <layers>
-                                        <layer>
-                                            <id>jar</id>
-                                            <files>
-                                                <file>
-                                                    <source>target/${project.build.finalName}.${project.packaging}</source>
-                                                    <outputDirectory>.</outputDirectory>
-                                                    <destName>assembly-tmp.jar</destName>
-                                                </file>
-                                            </files>
-                                        </layer>
-                                    </layers>
-                                </assembly>
                                 <dockerFile>Dockerfile</dockerFile>
                             </build>
                         </image>
